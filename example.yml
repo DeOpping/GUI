@@ -1,0 +1,83 @@
+# Here is a basic YML file for a GUI in my plugins!
+
+#
+# PLACEHOLDERAPI --
+# PlaceholderAPI placeholders can be used in the GUI title,
+# item names, and item lore!
+#
+
+#
+# LEGACY COLORS --
+# Legacy colors can be used in the GUI title, item names, and item lore!
+# Legacy colors are what we're all used to, examples: &a &c &1 &9
+#
+
+#
+# HEX COLORS --
+# HEX colors can be used in the GUI title, item names, and item lore!
+# Format: #123456
+#
+
+#
+# TITLE --
+#
+title: Basic GUI
+
+#
+# ROWS --
+# Rows allowed are 0 to 5
+#
+rows: 5
+
+# Here we begin to add items to the GUI --
+contents:
+  'filler':
+    material: GRAY_STAINED_GLASS_PANE
+    name: '&f'
+    lore: []
+    slots:
+      - '0,8;0,5'
+  # Items have a higher priority the further down they are!
+  # The items below will show instead of the stained glass!
+  'stone':
+    material: STONE
+    #
+    # CUSTOM MODEL DATA (1.14+) --
+    # https://github.com/DeOpping/GUI/wiki/model-data
+    #
+    model-data: 0
+    name: '&6Stone'
+    lore:
+      - 'Multiple lore lines'
+      - 'are supported!'
+      - 'You can also add PlaceholderAPI placeholders,'
+      - '&cLegacy &6color &5codes,'
+      - '#123456and HEX codes (for 1.16+)!'
+    #
+    # SLOTS --
+    # https://github.com/DeOpping/GUI/wiki/slots
+    #
+    slots:
+      - '4;3'
+    #
+    # REQUIREMENTS --
+    # https://github.com/DeOpping/GUI/wiki/requirements
+    #
+    view-requirements:
+      - '[permission] view.requirement'
+  #
+  # CUSTOM HEADS --
+  # https://github.com/DeOpping/GUI/wiki/custom-heads
+  #
+  'head-database':
+    material: 'hdb-10320'
+    name: '&6Custom Head &8(&7Head Database&8)'
+    lore: []
+    slots:
+      - '3;3'
+  'advanced-heads':
+    material: 'ahd-10320'
+    name: '&6Custom Head &8(&7Advanced Heads&8)'
+    lore: []
+    slots:
+      - '5;3'

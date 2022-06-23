@@ -25,7 +25,7 @@ title: Basic GUI
 
 #
 # ROWS --
-# Rows allowed are 0 to 5
+# Rows allowed are 1 to 6
 #
 rows: 5
 

@@ -33,17 +33,23 @@ rows: 5
 contents:
   'filler':
     material: GRAY_STAINED_GLASS_PANE
+    amount: 1
     name: '&f'
     lore: []
+    #
+    # SLOTS --
+    # https://github.com/DeOpping/GUI/wiki/Slots
+    #
     slots:
       - '0,8;0,5'
   # Items have a higher priority the further down they are!
   # The items below will show instead of the stained glass!
   'stone':
     material: STONE
+    amount: 1
     #
     # CUSTOM MODEL DATA (1.14+) --
-    # https://github.com/DeOpping/GUI/wiki/model-data
+    # https://github.com/DeOpping/GUI/wiki/Model-Data
     #
     model-data: 0
     name: '&6Stone'
@@ -53,30 +59,28 @@ contents:
       - 'You can also add PlaceholderAPI placeholders,'
       - '&cLegacy &6color &5codes,'
       - '#123456and HEX codes (for 1.16+)!'
-    #
-    # SLOTS --
-    # https://github.com/DeOpping/GUI/wiki/slots
-    #
     slots:
       - '4;3'
     #
     # REQUIREMENTS --
-    # https://github.com/DeOpping/GUI/wiki/requirements
+    # https://github.com/DeOpping/GUI/wiki/Requirements
     #
     view-requirements:
       - '[permission] view.requirement'
   #
   # CUSTOM HEADS --
-  # https://github.com/DeOpping/GUI/wiki/custom-heads
+  # https://github.com/DeOpping/GUI/wiki/Custom-Heads
   #
   'head-database':
     material: 'hdb-10320'
+    amount: 1
     name: '&6Custom Head &8(&7Head Database&8)'
     lore: []
     slots:
       - '3;3'
   'advanced-heads':
     material: 'ahd-10320'
+    amount: 1
     name: '&6Custom Head &8(&7Advanced Heads&8)'
     lore: []
     slots:
